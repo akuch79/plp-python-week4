@@ -1,25 +1,18 @@
-def add(x, y):
-    """Return the sum of x and y."""
-    return x + y
+def welcome(name):
+    """Return a welcome sentence for a learner."""
+    return "Hello, " + name + "! Welcome to PLP."
 
 
-def subtract(x, y):
-    """Return the difference of x and y."""
-    return x - y
+def double(number):
+    """Return the number doubled."""
+    return number * 2
 
 
-def multiply(x, y):
-    """Return the product of x and y."""
-    return x * y
+def is_pass(score):
+    """Return True if the score is a pass."""
+    return score >= 50
 
 
-def divide(x, y):
-    """Return the quotient of x divided by y."""
-    if y == 0:
-        raise ValueError("Cannot divide by zero.")
-    return x / y
-
-
-def greet(name):
-    """Return a friendly greeting for the provided name."""
-    return f"Hello, {name}! Welcome to PLP Python Week 4."
+def greet(name, greeting="Hello"):
+    """Return a greeting for a name, defaulting to Hello."""
+    return greeting + ", " + name + "!"

@@ -2,21 +2,18 @@ import toolbox
 
 
 def main():
-    print("Welcome to the Python Toolbox!")
-    name = input("What is your name? ")
-    print(toolbox.greet(name))
+    print(toolbox.welcome("Amina"))
+    print(toolbox.welcome("Brian"))
+    print(toolbox.welcome("Fatuma"))
 
-    x = float(input("Enter the first number: "))
-    y = float(input("Enter the second number: "))
+    print(toolbox.double(7))
+    print(toolbox.double(10))
 
-    print(f"\n{x} + {y} = {toolbox.add(x, y)}")
-    print(f"{x} - {y} = {toolbox.subtract(x, y)}")
-    print(f"{x} * {y} = {toolbox.multiply(x, y)}")
+    print(toolbox.is_pass(80))
+    print(toolbox.is_pass(20))
 
-    try:
-        print(f"{x} / {y} = {toolbox.divide(x, y)}")
-    except ValueError as error:
-        print(f"Error: {error}")
+    print(toolbox.greet("Amina"))
+    print(toolbox.greet("Brian", "Habari"))
 
 
 if __name__ == "__main__":
